@@ -30,7 +30,7 @@ router.get('/:id', async (req, res) => {
     });
 
     if(!tagData) {
-      res.status(404).json({Message: "No category with that ID found"});
+      res.status(404).json({Message: "No tag with that ID found"});
     }
 
     res.status(200).json(tagData);
@@ -61,7 +61,7 @@ router.put('/:id', async (req, res) => {
     });
 
     if(!tagData) {
-      res.status(404).json({message: 'No location found with this id!'});
+      res.status(404).json({message: 'No tag found with this id!'});
     }
 
     res.status(200).json(tagData);
@@ -81,7 +81,7 @@ router.delete('/:id', async (req, res) => {
     });
 
     if(!tagData) {
-      res.status(404).json({message: 'No location found with this id!'});
+      res.status(404).json({message: 'No tag found with this id!'});
       return;
     }
 

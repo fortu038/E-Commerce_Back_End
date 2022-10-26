@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
     });
 
     if(!productData) {
-      res.status(404).json({Message: "No category with that ID found"});
+      res.status(404).json({Message: "No product with that ID found"});
     }
 
     res.status(200).json(productData);
@@ -128,7 +128,7 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!productData) {
-      res.status(404).json({ message: 'No location found with this id!' });
+      res.status(404).json({ message: 'No product found with this id!' });
       return;
     }
 
